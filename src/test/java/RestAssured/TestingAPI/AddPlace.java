@@ -54,6 +54,10 @@ public class AddPlace{
 	public void delete_place_payload_with() {
 		System.out.println("delete place api");
 	}
+	@Test
+	public void put_place_payload_with() {
+		System.out.println("delete place api");
+	}
 	}
 
 	

@@ -22,4 +22,8 @@ public class addplaceapi {
 			System.out.println(id);
 			System.out.println("hello");
 		}
+		@Test
+		public void delete_place_payload_with() {
+			System.out.println("delete place api");
+		}
 }
