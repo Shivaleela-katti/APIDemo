@@ -53,7 +53,10 @@ public class AddPlace{
 //			System.out.println(res.getBody().asString());
 //			
 		}
-	
+	@Test
+	public void delete_place_payload_with() {
+		System.out.println("delete place api");
+	}
 	}
 
 	
