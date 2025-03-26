@@ -4,15 +4,9 @@ import static io.restassured.RestAssured.given;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.util.ArrayList;
-import java.util.List;
 
-import Pojo.AddPlaceAPI;
-import Pojo.Location;
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
-import io.restassured.response.Response;
 public class Basics {
 
 	public static void main(String[] args) throws FileNotFoundException {
@@ -37,7 +31,8 @@ public class Basics {
 			.body(file1).when().put("maps/api/place/update/json")
 			.then().assertThat().statusCode(200).extract().response().asString();
 			JsonPath js=new JsonPath(res);
-			System.out.println(res);	
+			System.out.println(res);
+			System.out.println(js);
 						
 	}
 

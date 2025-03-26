@@ -7,12 +7,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.testng.annotations.Test;
-import static org.hamcrest.Matchers.*;
+
 import Pojo.AddPlaceAPI;
 import Pojo.Location;
-import io.restassured.response.Response;
-import io.restassured.specification.RequestSpecification;
-import io.restassured.specification.ResponseSpecification;
 
 //import io.cucumber.java.en.Given;
 
@@ -47,13 +44,16 @@ public class AddPlace{
 					.when().post("https://rahulshettyacademy.com/maps/api/place/add/json")
 			.then().assertThat().statusCode(200).extract().response().asString();
 	    
-//			String responseString=res.asString();
-//			System.out.println(responseString);
+			String responseString=res.toString();
+			System.out.println(responseString);
 //
 //			System.out.println(res.getBody().asString());
 //			
 		}
-	
+	@Test
+	public void delete_place_payload_with() {
+		System.out.println("delete place api");
+	}
 	}
 
 	
